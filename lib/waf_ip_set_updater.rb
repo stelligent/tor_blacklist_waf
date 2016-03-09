@@ -1,6 +1,6 @@
 require 'aws-sdk'
 require 'set'
-require 'waf_util'
+require 'aws-sdk-utils'
 
 class WafIpSetUpdater
 

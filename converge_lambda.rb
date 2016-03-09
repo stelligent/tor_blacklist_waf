@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 require 'trollop'
-require_relative 'lib/cloudformation_converger'
-require_relative 'lib/waf_util'
+require 'aws-sdk-utils'
 
 opts = Trollop::options do
   opt :stack_name, '', type: :string, required: true

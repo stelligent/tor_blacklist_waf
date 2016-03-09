@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'aws-sdk'
 gem 'cfndsl'
 gem 'trollop'
+gem 'aws-sdk-utils'
 
 group :test do
   gem 'awspec'
