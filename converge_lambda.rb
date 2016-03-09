@@ -10,6 +10,6 @@ end
 
 ip_set_id = WafUtil::get_ipset_id_by_name('torExitPointIpSet')
 
-outputs = CloudformationConverger.new.converge stack_name: opts[:stack_name],
+outputs = CloudFormationConverger.new.converge stack_name: opts[:stack_name],
                                                stack_path: opts[:path],
                                                parameters: { 'ipSetId' => ip_set_id }
